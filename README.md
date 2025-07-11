@@ -5,6 +5,27 @@
 Сервис мониторинга активности адресов в блокчейне Litecoin (LTC) за период с 01.03.2025 по 31.03.2025. Проект собирает, анализирует и визуализирует данные о транзакциях, исключая подозрительные адреса, для выявления точек роста на основе аналитики объёмов.
 
 ## Структура проекта
+```
+/
+├── code/ # Папка со скриптами
+│ ├── aggregatedVolumes.js # Заполнение таблицы aggregatedVolumes
+│ ├── tokenPrices.js # Заполнение таблицы tokenPrices
+│ ├── tokenVolumes.js # Заполнение таблицы tokenVolumes
+│ └── transactionsToDB.js # Заполнение таблицы transactionsToDB
+│
+├── dataBase/ # Папка с данными проекта
+│ ├── agregated_volumes.csv # Заполненная таблица agregated_volumes
+│ ├── blockchains.csv # Заполненная таблица blockchains
+│ ├── internDB # Дамп заполненной базы данных
+│ ├── tech_wallet.csv # Заполненная таблица tech_wallet
+│ ├── token_prices.csv # Заполненная таблица token_prices
+│ ├── token_volumes.csv # Заполненная таблица token_volumes
+│ ├── transactions.csv # Заполненная таблица transactions
+│ └── wallets.csv # Заполненная таблица wallets
+│
+├── README.md # Документация
+└── internship.pdf # Аналитический отчёт
+```
 
 ### Основные модули
 1. **tokenPrices.js**  
